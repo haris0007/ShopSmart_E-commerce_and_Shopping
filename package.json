@@ -1,0 +1,33 @@
+{
+  "name": "shopsmart_e-commerce_and_shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haris0007/ShopSmart_E-commerce_and_Shopping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/haris0007/ShopSmart_E-commerce_and_Shopping/issues"
+  },
+  "homepage": "https://github.com/haris0007/ShopSmart_E-commerce_and_Shopping#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "shopsmart_e-commerce_and_shopping": "file:"
+  }
+}
