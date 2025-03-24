@@ -4,7 +4,7 @@ require('dotenv').config();
 const dbserver=require('./config')
 const UserRouter=require('./routes/userRoutes');
 const AdminRouter=require("./routes/adminRoutes")
-const CartRouter=require("./routes/cartRoutes")
+const cartRouter=require("./routes/cartRoutes")
 const Router=require("./routes/productRoutes")
 const authMw=require('./middleware/AuthM');
 app.use(express.json())
@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use("/user",UserRouter);
 app.use("/user",AdminRouter);
-app.use("/cart",CartRouter);
+app.use("/cart",cartRouter);
 app.use("/product",authMw(),Router);
 
 const PORT= process.env.PORT;
