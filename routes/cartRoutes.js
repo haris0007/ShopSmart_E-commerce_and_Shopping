@@ -1,7 +1,7 @@
 const express = require("express");
 const Cart = require("../models/cartModel");
 const Product = require("../models/productModel");
-const authMw = require("../middleware/authMw");
+const authMw = require("../middleware/AuthM");
 const cartRouter = express.Router();
 
 // Add product to cart & update stock
