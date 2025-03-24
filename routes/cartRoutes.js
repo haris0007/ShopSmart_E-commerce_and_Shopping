@@ -108,7 +108,7 @@ cartRouter.get("/", authMw(), async (req, res) => {
 });
 
 // Clear entire cart and restore stock
-CartRouter.delete("/clearcart", authMw(), async (req, res) => {
+cartRouter.delete("/clearcart", authMw(), async (req, res) => {
     try {
       const userId = req.id;
       const cart = await CartModel.findOne({ user: userId });
